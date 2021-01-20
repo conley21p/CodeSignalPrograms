@@ -18,7 +18,9 @@ between their house and the store.
 boolean[] delivery(int[] order, int[][] shoppers) {
 		boolean[] result = new boolean[shoppers.length];
 		for(int i = 0; i< shoppers.length; i++) {
-			result[i] = ((order[0]+shoppers[i][0]+0.0)/shoppers[i][1])+shoppers[i][2] >= order[1]  && ((order[0]+shoppers[i][0]+0.0)/shoppers[i][1])+shoppers[i][2] <=   order[1]+order[2];	
+			result[i] = 
+   ((order[0]+shoppers[i][0]+0.0)/shoppers[i][1])+shoppers[i][2] >= order[1] 
+&& ((order[0]+shoppers[i][0]+0.0)/shoppers[i][1])+shoppers[i][2] <= order[1]+order[2];	
 		}
 		return result;
 }
